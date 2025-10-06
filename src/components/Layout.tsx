@@ -1,12 +1,22 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "./ThemeProvider";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const { theme, setTheme } = useTheme();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const isActive = (path: string) => location.pathname === path;
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -49,7 +59,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </span>
           </Link>
 
-          <nav className="flex items-center gap-8 md:gap-9">
+          <nav className="flex items-center gap-4 md:gap-8">
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-9">
               <Link
                 to="/"
@@ -83,6 +94,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             </div>
 
+
+            {/* Theme Toggle */}
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="p-2 rounded-lg hover:bg-accent transition-colors"
@@ -95,14 +108,80 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               )}
             </button>
 
+            {/* Contact Button - Hidden on mobile when menu is open */}
             <Link
               to="/contact"
-              className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors"
+              className={`px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors ${
+                isMobileMenuOpen ? "hidden md:block" : ""
+              }`}
             >
               Contact Us
             </Link>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden p-2 rounded-lg hover:bg-accent transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
+            </button>
           </nav>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-border bg-background">
+            <nav className="px-6 py-4 space-y-3">
+              <Link
+                to="/"
+                onClick={closeMobileMenu}
+                className={`block py-2 text-sm ${
+                  isActive("/")
+                    ? "text-foreground font-medium"
+                    : "text-foreground/70 hover:text-foreground"
+                }`}
+              >
+                Home
+              </Link>
+              <Link
+                to="/solutions"
+                onClick={closeMobileMenu}
+                className={`block py-2 text-sm ${
+                  isActive("/solutions")
+                    ? "text-foreground font-medium"
+                    : "text-foreground/70 hover:text-foreground"
+                }`}
+              >
+                Solutions
+              </Link>
+              <Link
+                to="/services"
+                onClick={closeMobileMenu}
+                className={`block py-2 text-sm ${
+                  isActive("/services")
+                    ? "text-foreground font-medium"
+                    : "text-foreground/70 hover:text-foreground"
+                }`}
+              >
+                Services
+              </Link>
+              <Link
+                to="/contact"
+                onClick={closeMobileMenu}
+                className="block w-full mt-4 px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-bold hover:bg-primary/90 transition-colors text-center"
+              >
+                Contact Us
+              </Link>
+            </nav>
+          </div>
+          
+        )}
+        
       </header>
 
       {/* Main Content */}
