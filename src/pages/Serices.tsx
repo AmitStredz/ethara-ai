@@ -17,7 +17,7 @@ export default function Services() {
                 AI Solutions for Business Growth
               </h1>
               <p className="text-base text-white">
-                Ethara AI empowers businesses with cutting-edge AI solutions,
+                Ethrah AI empowers businesses with cutting-edge AI solutions,
                 driving innovation and efficiency across industries.
               </p>
             </div>
@@ -183,7 +183,7 @@ export default function Services() {
             Unlocking Your Brand's Potential
           </h2>
           <p className="text-base text-foreground">
-            At Ethara AI, we combine deep industry expertise with advanced AI
+            At Ethrah AI, we combine deep industry expertise with advanced AI
             capabilities to transform your business. Our solutions are tailored to
             meet your unique challenges and opportunities, ensuring sustainable
             growth and a competitive edge.
@@ -287,7 +287,7 @@ export default function Services() {
             Ready to Transform Your Business with AI?
           </h2>
           <p className="text-base mb-8 max-w-xl mx-auto">
-            Contact us today to learn how Ethara AI can help you achieve your
+            Contact us today to learn how Ethrah AI can help you achieve your
             goals.
           </p>
 

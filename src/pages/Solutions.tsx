@@ -17,7 +17,7 @@ export default function Solutions() {
                 AI Solutions for Every Industry
               </h1>
               <p className="text-base text-white">
-                Ethara AI empowers businesses with cutting-edge AI solutions,
+                Ethrah AI empowers businesses with cutting-edge AI solutions,
                 driving efficiency, innovation, and growth across diverse
                 sectors.
               </p>
@@ -44,7 +44,7 @@ export default function Solutions() {
                 Optimizing Healthcare Staffing with AI
               </h3>
               <p className="text-base text-muted-foreground">
-                Ethara AI's healthcare workforce management solution leverages AI
+                Ethrah AI's healthcare workforce management solution leverages AI
                 to optimize staffing, reduce costs, and improve patient care. Our
                 intelligent system analyzes demand, predicts staffing needs, and
                 automates scheduling, ensuring the right staff are in place at
@@ -71,7 +71,7 @@ export default function Solutions() {
                 Revolutionizing Cargo Ship Operations with AI
               </h3>
               <p className="text-base text-muted-foreground">
-                Ethara AI's AI-powered cargo ship management system transforms
+                Ethrah AI's AI-powered cargo ship management system transforms
                 maritime operations. Our solution optimizes routes, predicts
                 maintenance needs, and enhances safety, leading to significant
                 cost savings and improved efficiency.
@@ -177,7 +177,7 @@ export default function Solutions() {
             Ready to Transform Your Business with AI?
           </h2>
           <p className="text-base mb-8 max-w-xl mx-auto">
-            Contact us today to learn how Ethara AI can help you achieve your
+            Contact us today to learn how Ethrah AI can help you achieve your
             goals.
           </p>
 

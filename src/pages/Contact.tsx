@@ -129,7 +129,7 @@ export default function Contact() {
                   />
                 </svg>
               </div>
-              <h3 className="font-bold mb-1">info@ethara.ai</h3>
+              <h3 className="font-bold mb-1">info@ethrah.ai</h3>
               <p className="text-sm text-muted-foreground">Email</p>
             </div>
 
@@ -264,7 +264,7 @@ export default function Contact() {
             Ready to Transform Your Business with AI?
           </h2>
           <p className="text-base mb-8 max-w-xl mx-auto">
-            Contact us today to learn how Ethara AI can help you achieve your
+            Contact us today to learn how Ethrah AI can help you achieve your
             goals.
           </p>
 

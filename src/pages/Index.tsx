@@ -14,7 +14,7 @@ export default function Index() {
           >
             <div className="max-w-4xl text-center space-y-8 mb-8">
               <h1 className="text-3xl md:text-5xl font-black text-white leading-tight tracking-tight">
-                Ethara AI: Shaping the Future of Artificial Intelligence
+                Ethrah AI: Shaping the Future of Artificial Intelligence
               </h1>
               <p className="text-base text-white">
                 We are at the forefront of AI innovation, developing solutions
@@ -51,7 +51,7 @@ export default function Index() {
               Our Core Values
             </h2>
             <p className="text-base text-foreground max-w-3xl">
-              At Ethara AI, we are driven by a set of core values that guide our
+              At Ethrah AI, we are driven by a set of core values that guide our
               work and ensure we deliver exceptional results.
             </p>
           </div>
@@ -313,7 +313,7 @@ export default function Index() {
             Ready to Transform Your Business with AI?
           </h2>
           <p className="text-base mb-8 max-w-xl mx-auto">
-            Contact us today to learn how Ethara AI can help you achieve your
+            Contact us today to learn how Ethrah AI can help you achieve your
             goals.
           </p>
 

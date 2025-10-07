@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </svg>
             </div>
             <span className="text-lg font-bold text-foreground">
-              Ethara AI
+              Ethrah AI
             </span>
           </Link>
 
@@ -257,7 +257,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
 
           <div className="text-center text-muted-foreground">
-            © 2025 Ethara AI. All rights reserved.
+            © 2025 Ethrah AI. All rights reserved.
           </div>
         </div>
       </footer>

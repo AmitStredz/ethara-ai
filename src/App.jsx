@@ -15,7 +15,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <ThemeProvider defaultTheme="light" storageKey="ethara-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="ethrah-ui-theme">
       <TooltipProvider>
         <Toaster />
         <Sonner />
